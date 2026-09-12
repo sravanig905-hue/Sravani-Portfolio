@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="sgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E05A88" />
+      <stop offset="50%" stop-color="#F77F67" />
+      <stop offset="100%" stop-color="#E5A93C" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#sgGrad)" />
+  <text x="32" y="44" font-family="'Playfair Display', serif, Georgia" font-size="34" font-weight="700" fill="#FAF5EE" text-anchor="middle">S</text>
+</svg>
