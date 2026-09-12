@@ -36,8 +36,8 @@ export default function Hero() {
               <circle cx="2" cy="2" r="1.5" fill="#E05A88" />
             </pattern>
             <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#F77F67" stop-opacity="0.3" />
-              <stop offset="100%" stop-color="#E5A93C" stop-opacity="0.1" />
+              <stop offset="0%" stopColor="#F77F67" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#E5A93C" stopOpacity="0.1" />
             </linearGradient>
           </defs>
           <rect width="100%" height="100%" fill="url(#dotGrid)" />

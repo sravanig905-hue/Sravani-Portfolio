@@ -27,7 +27,9 @@ app.get('/api/health', (req, res) => {
 // Routes
 app.use('/api/contact', contactRouter);
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT} - http://localhost:${PORT}`);
+// Start server (bound to 0.0.0.0 for cloud deployment platforms like Render)
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
+export default server;

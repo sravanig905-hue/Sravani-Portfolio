@@ -59,8 +59,11 @@ export default function Contact() {
     setFormStatus({ submitting: true, success: false, error: null });
 
     try {
-      // Connect to Express backend API
-      const response = await fetch('http://localhost:5000/api/contact', {
+      // Connect to Express backend API via relative proxy or explicit API target
+      const apiUrl = window.location.port === '5173'
+        ? '/api/contact'
+        : (import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api/contact` : 'http://localhost:5000/api/contact');
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
